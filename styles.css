@@ -1,0 +1,145 @@
+/* === Base Styles === */
+
+/* General body background */
+body {
+    background-color: #d69668 ; /* Light Beige */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Header & Footer Backgrounds */
+header,
+footer {
+    background-color: #8B7D6B; /* Dark Beige/Brown */
+    color: white;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Main section background */
+main {
+    background-color: #E4DCCF; /* Medium Beige */
+    padding-bottom: 2rem;
+}
+
+/* Section Headings */
+h1, h2, h3, h4, h5, h6 {
+    color: #8B7D6B; /* Dark Beige/Brown */
+    font-weight: bold;
+}
+
+/* === Navigation === */
+
+/* Navbar Styles */
+.navbar {
+    background-color: #8B7D6B; /* Dark Beige/Brown */
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: white !important;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #E4DCCF !important; /* Medium Beige */
+}
+
+/* === Cards & Interactions === */
+
+/* Card Styling */
+.card {
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    object-fit: cover;
+    height: 150px;
+}
+
+/* Price Styling */
+.card-text.text-success {
+    font-weight: bold;
+}
+
+/* === Scroll Section === */
+
+.d-flex.overflow-auto {
+    scrollbar-width: thin;
+    scrollbar-color: #8B7D6B #FFF5EE;
+}
+
+/* For Webkit Browsers */
+.d-flex.overflow-auto::-webkit-scrollbar {
+    height: 8px;
+}
+
+.d-flex.overflow-auto::-webkit-scrollbar-track {
+    background: #FFF5EE;
+}
+
+.d-flex.overflow-auto::-webkit-scrollbar-thumb {
+    background-color: #8B7D6B;
+    border-radius: 10px;
+}
+
+/* === Review Toggle Button === */
+
+.toggle-review {
+    font-size: 0.85rem;
+    background: none;
+    border: 1px solid #8B7D6B;
+    color: #fff;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.toggle-review:hover {
+    background-color: #E4DCCF;
+    color: #8B7D6B;
+    border-color: #E4DCCF;
+}
+
+/* === Reviews Blockquote Style === */
+
+.review-section blockquote {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-left: 4px solid #28a745; /* Bootstrap success green */
+    margin-bottom: 1rem;
+    font-style: italic;
+    border-radius: 4px;
+    position: relative;
+}
+
+.review-section .blockquote-footer {
+    color: #555;
+    font-size: 0.9em;
+}
+
+/* === Utility Fixes === */
+
+a.btn-outline-primary {
+    border-color: #8B7D6B;
+    color: #8B7D6B;
+}
+
+a.btn-outline-primary:hover {
+    background-color: #8B7D6B;
+    color: white;
+}
