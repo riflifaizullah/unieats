@@ -16,20 +16,25 @@
     <header>
         <!-- Navbar -->
        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container">
-                <a class="navbar-brand" href="#">UniEats!</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about">Promos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
-                    </ul>
-                </div>
-            </div>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+    <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">Promos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+
+        <!-- Report Dropdown -->
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="reportDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Report
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="reportDropdown">
+                <li><a class="dropdown-item" href="#report-problem">🏪 Report Store Issue</a></li>
+                <li><a class="dropdown-item" href="#report-web">🐞 Report Website Bug</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
         </nav>
     </header>
 
@@ -49,7 +54,7 @@
                 <div class="d-flex overflow-auto gap-3 py-2">
                     <!-- Card 1 -->
                     <div class="card shadow-sm" style="min-width: 200px;">
-                        <img src="https://via.placeholder.com/200x150?text=Nasi+Lemak " class="card-img-top" alt="Nasi Lemak">
+                        <img src="https://via.placeholder.com/200x150?text=Nasi+Lemak " class="card-img-top img-fluid " alt="Nasi Lemak">
                         <div class="card-body">
                             <h6 class="card-title">Nasi Lemak</h6>
                             <p class="card-text text-success">RM4.00</p>
@@ -59,7 +64,7 @@
 
                     <!-- Card 2 -->
                     <div class="card shadow-sm" style="min-width: 200px;">
-                        <img src="https://via.placeholder.com/200x150?text=Maggi+Goreng " class="card-img-top" alt="Maggi Goreng">
+                        <img src="https://via.placeholder.com/200x150?text=Maggi+Goreng " class="card-img-top img-fluid " alt="Maggi Goreng">
                         <div class="card-body">
                             <h6 class="card-title">Maggi Goreng</h6>
                             <p class="card-text text-success">RM4.50</p>
@@ -86,7 +91,7 @@
             </div>
             <!--card 2-->
             <div class="card shadow-sm" style="min-width: 200px;">
-                    <img src="https://via.placeholder.com/200x150?text=Maggi+Goreng " class="card-img-top" alt="Maggi Goreng">
+                    <img src="https://via.placeholder.com/200x150?text=Maggi+Goreng " class="card-img-top img-fluid " alt="Maggi Goreng">
                     <div class="card-body">
                         <h6 class="card-title">Maggi Goreng</h6>
                         <p class="card-text text-success">RM4.50</p>
@@ -94,15 +99,15 @@
                     </div>
             </div>
 
-        </section>
-
-        <section id = "lecturer" class ="py-4">
+     </section>
+        <!--lecturer recommend-->
+    <section id = "lecturer" class ="py-4">
             <div class = "container">
                 <h3 class = "mb-4"> Lecturer's Recommendation!</h3>
             <div class="d-flex overflow-auto gap-3 py-2">
                 <!--card 1-->
                 <div class = "card shadow-sm" style = "min-width: 200px">
-                    <img src="https://via.placeholder.com/200x150?text=Maggi+Goreng " class="card-img-top" alt="Maggi Goreng">
+                    <img src="https://via.placeholder.com/200x150?text=Maggi+Goreng " class="card-img-top  img-fluid" alt="Maggi Goreng">
                     <div class = "card-body">
                         <h6 class="card-title">Maggi Goreng</h6>
                         <p class="card-text">RM4.50</p>
@@ -132,7 +137,7 @@
                     <!-- Horizontal Menu Scroll -->
                     <div class="d-flex overflow-auto gap-3 py-2">
                         <div class="card" style="min-width: 200px;">
-                            <img src="https://via.placeholder.com/200x150?text=Nasi+Lemak " class="card-img-top" alt="Nasi Lemak">
+                            <img src="https://via.placeholder.com/200x150?text=Nasi+Lemak " class="card-img-top img-fluid " alt="Nasi Lemak">
                             <div class="card-body">
                                 <h6 class="card-title">Nasi Lemak</h6>
                                 <p class="card-text text-success">RM4.00</p>
@@ -159,7 +164,7 @@
                     <!-- Menu Scroll -->
                     <div class="d-flex overflow-auto gap-3 py-2">
                         <div class="card" style="min-width: 200px;">
-                            <img src="https://via.placeholder.com/200x150?text=Maggi+Goreng " class="card-img-top" alt="Maggi Goreng">
+                            <img src="https://via.placeholder.com/200x150?text=Maggi+Goreng " class="card-img-top img-fluid " alt="Maggi Goreng">
                             <div class="card-body">
                                 <h6 class="card-title">Maggi Goreng</h6>
                                 <p class="card-text text-success">RM4.50</p>
@@ -179,9 +184,52 @@
         </section>
     </main>
 
+    <section id="report-problem" class="py-5 bg-white">
+  <div class="container">
+    <h3 class="mb-4">🚩 Report a Problem</h3>
+    <p>If you notice a wrong price, scam, or offensive menu, let us know below:</p>
+
+    <form id="reportForm">
+      <div class="mb-3">
+        <label for="store" class="form-label">Which store?</label>
+        <select class="form-select" id="store" required>
+          <option value="">Select a store</option>
+          <option value="Makcik Kantin">Makcik Kantin</option>
+          <option value="Cafe Mawar">Cafe Mawar</option>
+          <!-- Add more stores as needed -->
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label for="issue" class="form-label">Type of issue</label>
+        <select class="form-select" id="issue" required>
+          <option value="">Select an issue</option>
+          <option value="Overpriced item">Overpriced item</option>
+          <option value="Wrong information">Wrong information</option>
+          <option value="Scam / fake item">Scam / fake item</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label for="details" class="form-label">Details (optional)</label>
+        <textarea class="form-control" id="details" rows="4" placeholder="Tell us what happened..."></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-danger">Submit Report</button>
+    </form>
+
+    <!-- Success message -->
+    <div id="reportSuccess" class="alert alert-success mt-3 d-none" role="alert">
+      ✅ Your report has been submitted. Thank you for helping us improve UniEats!
+    </div>
+  </div>
+</section>
+
+
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
-        <div class="container">
+        <div class="container-fluid px-3 px-md-5 ">
             <p>&copy; 2025 UniEats – Built with 💚 for students</p>
         </div>
     </footer>
@@ -198,6 +246,18 @@
                 button.textContent = (reviewSection.style.display === 'block') ? '⮝ Hide Reviews' : '⮟ Reviews';
             });
         });
+       
+            document.getElementById("reportForm").addEventListener("submit", function (e) {
+                e.preventDefault();
+
+                // For now, just show the success message
+                document.getElementById("reportSuccess").classList.remove("d-none");
+
+                // Reset the form
+                this.reset();
+            });
+
+
     </script>
 </body>
 </html>
